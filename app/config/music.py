@@ -27,6 +27,11 @@ class MusicSettingsDiscogs(BaseSettings):
 class MusicSettings(BaseSettings):
     """Настройки для музыкальных рекомендаций."""
 
+    MUSIC: str = '🎧 Mузыка 🎧' # Отображение надписи в главном меню
+
+    MUSIC_NEWS: str = "🤘 Музыкальные Новинки 🤘"
+    CALLBACK_MUSIC_NEWS: str = "musical_news"
+
     model_config: SettingsConfigDict = SettingsConfigDict(
         env_file="env/.env.music", extra="ignore"
     )
