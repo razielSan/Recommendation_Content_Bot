@@ -1,0 +1,260 @@
+{
+    "id": 34025415,
+    "status": "Accepted",
+    "year": 2025,
+    "resource_url": "https://api.discogs.com/releases/34025415",
+    "uri": "https://www.discogs.com/release/34025415-Aftermath-46-The-Cutting-Begins",
+    "artists": [
+        {
+            "name": "Aftermath (46)",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 10949150,
+            "resource_url": "https://api.discogs.com/artists/10949150"
+        }
+    ],
+    "artists_sort": "Aftermath (46)",
+    "labels": [
+        {
+            "name": "Phobia Records",
+            "catno": "PR295",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 77079,
+            "resource_url": "https://api.discogs.com/labels/77079",
+            "thumbnail_url": "https://i.discogs.com/eemhaypi7jt0mFwRJ8X9_LEffJmMtjAtzl_AdIKpJd0/rs:fit/g:sm/q:90/h:600/w:526/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTc3MDc5/LTE0MzUwNDIxOTMt/NzQ4OS5qcGVn.jpeg"
+        },
+        {
+            "name": "Halvfabrikat Records",
+            "catno": "HALVLP136",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 67535,
+            "resource_url": "https://api.discogs.com/labels/67535",
+            "thumbnail_url": "https://i.discogs.com/UJY2qu7FHGntcA5eDbTq_rClAOeOBmIiPc2jg6F9_90/rs:fit/g:sm/q:90/h:284/w:530/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTY3NTM1/LTEzMzc5MzU5NDkt/NTM4Mi5qcGVn.jpeg"
+        },
+        {
+            "name": "Anomie Records (2)",
+            "catno": "P.U.T. 066",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 189790,
+            "resource_url": "https://api.discogs.com/labels/189790",
+            "thumbnail_url": "https://i.discogs.com/k5251LlUUXiST7jW6YheJGYAr7OtoiRmDo2rKswNdOc/rs:fit/g:sm/q:90/h:330/w:312/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTE4OTc5/MC0xMjcwNDk2OTIw/LmpwZWc.jpeg"
+        }
+    ],
+    "series": [],
+    "companies": [
+        {
+            "name": "Malmer Productions",
+            "catno": "",
+            "entity_type": "23",
+            "entity_type_name": "Recorded At",
+            "id": 1520897,
+            "resource_url": "https://api.discogs.com/labels/1520897"
+        },
+        {
+            "name": "Malmer Productions",
+            "catno": "",
+            "entity_type": "27",
+            "entity_type_name": "Mixed At",
+            "id": 1520897,
+            "resource_url": "https://api.discogs.com/labels/1520897"
+        },
+        {
+            "name": "Malmer Productions",
+            "catno": "",
+            "entity_type": "29",
+            "entity_type_name": "Mastered At",
+            "id": 1520897,
+            "resource_url": "https://api.discogs.com/labels/1520897"
+        },
+        {
+            "name": "GZ Media",
+            "catno": "",
+            "entity_type": "17",
+            "entity_type_name": "Pressed By",
+            "id": 430654,
+            "resource_url": "https://api.discogs.com/labels/430654",
+            "thumbnail_url": "https://i.discogs.com/tsQO8Fa5vPMtcFal_YMkjrAm8fO6g9lwwTSN64t0mo8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTQzMDY1/NC0xNzUzMTExMDY1/LTM2ODcucG5n.jpeg"
+        }
+    ],
+    "formats": [
+        {
+            "name": "Vinyl",
+            "qty": "1",
+            "descriptions": [
+                "LP",
+                "Album"
+            ]
+        }
+    ],
+    "data_quality": "Needs Vote",
+    "community": {
+        "have": 12,
+        "want": 4,
+        "rating": {
+            "count": 3,
+            "average": 5.0
+        },
+        "submitter": {
+            "username": "Thrasharn",
+            "resource_url": "https://api.discogs.com/users/Thrasharn"
+        },
+        "contributors": [
+            {
+                "username": "Thrasharn",
+                "resource_url": "https://api.discogs.com/users/Thrasharn"
+            },
+            {
+                "username": "vs_666",
+                "resource_url": "https://api.discogs.com/users/vs_666"
+            }
+        ],
+        "data_quality": "Needs Vote",
+        "status": "Accepted"
+    },
+    "format_quantity": 1,
+    "date_added": "2025-05-19T10:03:18-07:00",
+    "date_changed": "2025-06-24T06:36:58-07:00",
+    "num_for_sale": 10,
+    "lowest_price": 17.5,
+    "master_id": 3852027,
+    "master_url": "https://api.discogs.com/masters/3852027",
+    "title": "The Cutting Begins",
+    "country": "Europe",
+    "released": "2025-05-16",
+    "notes": "500 copies pressed (400 black (this version), 100 yellow).\nB6 is a bonus track on vinyl only, not mentioned anywhere on the release.",
+    "released_formatted": "16 May 2025",
+    "identifiers": [
+        {
+            "type": "Barcode",
+            "value": "7320470268261"
+        }
+    ],
+    "videos": [
+        {
+            "uri": "https://www.youtube.com/watch?v=FWF_x9L7-2A",
+            "title": "Aftermath - The Cutting Begins (Full Album)",
+            "description": "Phobia Records / Halvfabrikat Records / Anomie Records (2024)\n\n1. The Cutting Begins 00:00\n2. First Blood 03:18\n3. Repulsive Reality 06:05\n4. Blinded Soul 08:27\n5. Altered States 11:10\n6. City Of The Living Debt 15:29\n7. Aftermath 19:23\n8. On The Hunt 23:",
+            "duration": 0,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=FWF_x9L7-2A",
+            "title": "Aftermath - The Cutting Begins (Full Album)",
+            "description": "Phobia Records / Halvfabrikat Records / Anomie Records (2024)\n\n1. The Cutting Begins 00:00\n2. First Blood 03:18\n3. Repulsive Reality 06:05\n4. Blinded Soul 08:27\n5. Altered States 11:10\n6. City Of The Living Debt 15:29\n7. Aftermath 19:23\n8. On The Hunt 23:",
+            "duration": 0,
+            "embed": true
+        }
+    ],
+    "genres": [
+        "Rock"
+    ],
+    "styles": [
+        "Death Metal",
+        "Punk",
+        "Crust"
+    ],
+    "tracklist": [
+        {
+            "position": "A1",
+            "type_": "track",
+            "title": "The Cutting Begins",
+            "duration": "3:18"
+        },
+        {
+            "position": "A2",
+            "type_": "track",
+            "title": "First Blood",
+            "duration": "2:47"
+        },
+        {
+            "position": "A3",
+            "type_": "track",
+            "title": "Repulsive Reality",
+            "duration": "2:22"
+        },
+        {
+            "position": "A4",
+            "type_": "track",
+            "title": "Blinded Soul",
+            "duration": "2:42"
+        },
+        {
+            "position": "A5",
+            "type_": "track",
+            "title": "Altered States",
+            "duration": "4:18"
+        },
+        {
+            "position": "A6",
+            "type_": "track",
+            "title": "City Of The Living Debt",
+            "duration": "3:54"
+        },
+        {
+            "position": "B1",
+            "type_": "track",
+            "title": "Aftermath",
+            "duration": "3:50"
+        },
+        {
+            "position": "B2",
+            "type_": "track",
+            "title": "On The Hunt",
+            "duration": "2:46"
+        },
+        {
+            "position": "B3",
+            "type_": "track",
+            "title": "Men Behind The Sun",
+            "duration": "3:45"
+        },
+        {
+            "position": "B4",
+            "type_": "track",
+            "title": "When Birds Sing No More",
+            "duration": "4:26"
+        },
+        {
+            "position": "B5",
+            "type_": "track",
+            "title": "Trial By Fire",
+            "duration": "5:10"
+        },
+        {
+            "position": "B6",
+            "type_": "track",
+            "title": "Jaws Of Wealth",
+            "duration": "1:21"
+        }
+    ],
+    "extraartists": [
+        {
+            "name": "Max Malmer",
+            "anv": "",
+            "join": "",
+            "role": "Mixed By, Mastered By, Engineer",
+            "tracks": "",
+            "id": 3619883,
+            "resource_url": "https://api.discogs.com/artists/3619883"
+        }
+    ],
+    "images": [
+        {
+            "type": "primary",
+            "uri": "https://i.discogs.com/ebeoyY5fU_FwVLqyS0rPJfAIMB-Mck8Z6m4sgkoghYw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "resource_url": "https://i.discogs.com/ebeoyY5fU_FwVLqyS0rPJfAIMB-Mck8Z6m4sgkoghYw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "uri150": "https://i.discogs.com/IwYYcRTIWPF2SbYx6E8WU89WhbHTOJlkf3p9v0zporU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "width": 600,
+            "height": 593
+        }
+    ],
+    "thumb": "https://i.discogs.com/IwYYcRTIWPF2SbYx6E8WU89WhbHTOJlkf3p9v0zporU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+    "estimated_weight": 230,
+    "blocked_from_sale": false,
+    "is_offensive": false
+}

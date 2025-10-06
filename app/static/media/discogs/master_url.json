@@ -1,0 +1,127 @@
+{
+    "id": 3852027,
+    "main_release": 34025415,
+    "most_recent_release": 34025415,
+    "resource_url": "https://api.discogs.com/masters/3852027",
+    "uri": "https://www.discogs.com/master/3852027-Aftermath-46-The-Cutting-Begins",
+    "versions_url": "https://api.discogs.com/masters/3852027/versions",
+    "main_release_url": "https://api.discogs.com/releases/34025415",
+    "most_recent_release_url": "https://api.discogs.com/releases/34025415",
+    "num_for_sale": 12,
+    "lowest_price": 17.5,
+    "images": [
+        {
+            "type": "primary",
+            "uri": "https://i.discogs.com/ebeoyY5fU_FwVLqyS0rPJfAIMB-Mck8Z6m4sgkoghYw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "resource_url": "https://i.discogs.com/ebeoyY5fU_FwVLqyS0rPJfAIMB-Mck8Z6m4sgkoghYw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "uri150": "https://i.discogs.com/IwYYcRTIWPF2SbYx6E8WU89WhbHTOJlkf3p9v0zporU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "width": 600,
+            "height": 593
+        }
+    ],
+    "genres": [
+        "Rock"
+    ],
+    "styles": [
+        "Death Metal",
+        "Punk",
+        "Crust"
+    ],
+    "year": 2025,
+    "tracklist": [
+        {
+            "position": "A1",
+            "type_": "track",
+            "title": "The Cutting Begins",
+            "duration": "3:18"
+        },
+        {
+            "position": "A2",
+            "type_": "track",
+            "title": "First Blood",
+            "duration": "2:47"
+        },
+        {
+            "position": "A3",
+            "type_": "track",
+            "title": "Repulsive Reality",
+            "duration": "2:22"
+        },
+        {
+            "position": "A4",
+            "type_": "track",
+            "title": "Blinded Soul",
+            "duration": "2:42"
+        },
+        {
+            "position": "A5",
+            "type_": "track",
+            "title": "Altered States",
+            "duration": "4:18"
+        },
+        {
+            "position": "A6",
+            "type_": "track",
+            "title": "City Of The Living Debt",
+            "duration": "3:54"
+        },
+        {
+            "position": "B1",
+            "type_": "track",
+            "title": "Aftermath",
+            "duration": "3:50"
+        },
+        {
+            "position": "B2",
+            "type_": "track",
+            "title": "On The Hunt",
+            "duration": "2:46"
+        },
+        {
+            "position": "B3",
+            "type_": "track",
+            "title": "Men Behind The Sun",
+            "duration": "3:45"
+        },
+        {
+            "position": "B4",
+            "type_": "track",
+            "title": "When Birds Sing No More",
+            "duration": "4:26"
+        },
+        {
+            "position": "B5",
+            "type_": "track",
+            "title": "Trial By Fire",
+            "duration": "5:10"
+        },
+        {
+            "position": "B6",
+            "type_": "track",
+            "title": "Jaws Of Wealth",
+            "duration": "1:21"
+        }
+    ],
+    "artists": [
+        {
+            "name": "Aftermath (46)",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 10949150,
+            "resource_url": "https://api.discogs.com/artists/10949150"
+        }
+    ],
+    "title": "The Cutting Begins",
+    "data_quality": "Correct",
+    "videos": [
+        {
+            "uri": "https://www.youtube.com/watch?v=FWF_x9L7-2A",
+            "title": "Aftermath - The Cutting Begins (Full Album)",
+            "description": "Phobia Records / Halvfabrikat Records / Anomie Records (2024)\n\n1. The Cutting Begins 00:00\n2. First Blood 03:18\n3. Repulsive Reality 06:05\n4. Blinded Soul 08:27\n5. Altered States 11:10\n6. City Of The Living Debt 15:29\n7. Aftermath 19:23\n8. On The Hunt 23:",
+            "duration": 0,
+            "embed": true
+        }
+    ]
+}

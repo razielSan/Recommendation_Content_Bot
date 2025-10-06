@@ -1,0 +1,136 @@
+{
+    "pagination": {
+        "page": 1,
+        "pages": 68,
+        "per_page": 3,
+        "items": 203,
+        "urls": {
+            "last": "https://api.discogs.com/database/search?key=tANnnHjqgUmlGqVeUesc&secret=XmizKKKqHZZsWbyBRZlcqLZiziTxajCu&style=crust&year=2025&format=Album&per_page=3&page=68&sort=year&sort_order=asc",
+            "next": "https://api.discogs.com/database/search?key=tANnnHjqgUmlGqVeUesc&secret=XmizKKKqHZZsWbyBRZlcqLZiziTxajCu&style=crust&year=2025&format=Album&per_page=3&page=2&sort=year&sort_order=asc"
+        }
+    },
+    "results": [
+        {
+            "country": "Europe",
+            "year": "2025",
+            "format": [
+                "Vinyl",
+                "LP",
+                "Album"
+            ],
+            "label": [
+                "Phobia Records",
+                "Halvfabrikat Records",
+                "Anomie Records",
+                "Malmer Productions",
+                "Malmer Productions",
+                "Malmer Productions",
+                "GZ Media"
+            ],
+            "type": "master",
+            "genre": [
+                "Rock"
+            ],
+            "style": [
+                "Death Metal",
+                "Punk",
+                "Crust"
+            ],
+            "id": 3852027,
+            "barcode": [
+                "7320470268261"
+            ],
+            "master_id": 3852027,
+            "master_url": "https://api.discogs.com/masters/3852027",
+            "uri": "/master/3852027-Aftermath-The-Cutting-Begins",
+            "catno": "PR295",
+            "title": "Aftermath (46) - The Cutting Begins",
+            "thumb": "https://i.discogs.com/IwYYcRTIWPF2SbYx6E8WU89WhbHTOJlkf3p9v0zporU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "cover_image": "https://i.discogs.com/ebeoyY5fU_FwVLqyS0rPJfAIMB-Mck8Z6m4sgkoghYw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDI1/NDE1LTE3NTA3NzIy/MTMtNTYwOS5qcGVn.jpeg",
+            "resource_url": "https://api.discogs.com/masters/3852027",
+            "community": {
+                "want": 4,
+                "have": 23
+            }
+        },
+        {
+            "country": "Italy",
+            "year": "2025",
+            "format": [
+                "CD",
+                "Album",
+                "Stereo"
+            ],
+            "label": [
+                "Time To Kill Records",
+                "SLAP Studio",
+                "SLAP Studio",
+                "SLAP Studio",
+                "SLAP Studio",
+                "Narcotica Publishing",
+                "Kick Promotion Agency"
+            ],
+            "type": "master",
+            "genre": [
+                "Rock"
+            ],
+            "style": [
+                "Crust",
+                "Grindcore"
+            ],
+            "id": 3857338,
+            "barcode": [
+                "0789091838944",
+                "2100012192736 TTK151CD",
+                "IFPI LK97"
+            ],
+            "master_id": 3857338,
+            "master_url": "https://api.discogs.com/masters/3857338",
+            "uri": "/master/3857338-HHC-Perpetual-Imbalance",
+            "catno": "TTK151CD",
+            "title": "H.H.C.* - Perpetual Imbalance",
+            "thumb": "https://i.discogs.com/58R9bDn7KluZ54x5gqNj-E8mXMm-BywBbF9SAbXXm10/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNzc0/MTkyLTE3NDcxNTc5/NzUtOTU4Ny5qcGVn.jpeg",
+            "cover_image": "https://i.discogs.com/SiT2nOcsbTYpjMDe-OZ7UK5t4QOi-q_nE7ly2cREEHQ/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNzc0/MTkyLTE3NDcxNTc5/NzUtOTU4Ny5qcGVn.jpeg",
+            "resource_url": "https://api.discogs.com/masters/3857338",
+            "community": {
+                "want": 1,
+                "have": 5
+            }
+        },
+        {
+            "country": "US",
+            "year": "2025",
+            "format": [
+                "Cassette",
+                "Album",
+                "Limited Edition",
+                "Numbered"
+            ],
+            "label": [
+                "Indigestable Suppuration Records"
+            ],
+            "type": "master",
+            "genre": [
+                "Rock"
+            ],
+            "style": [
+                "Goregrind",
+                "Crust"
+            ],
+            "id": 3959777,
+            "barcode": [],
+            "master_id": 3959777,
+            "master_url": "https://api.discogs.com/masters/3959777",
+            "uri": "/master/3959777-Morgue-Tar-Pissing-Into-The-Gaping-Necrotic-Rectum-Of-Mankind",
+            "catno": "none",
+            "title": "Morgue Tar - Pissing Into The Gaping Necrotic Rectum Of Mankind",
+            "thumb": "https://i.discogs.com/O02TvTECx25itKri4bP89w8n9T4CyypW7erEuBkUEc0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0ODc1/OTE3LTE3NTU3NDQ2/NjAtOTA0NS5qcGVn.jpeg",
+            "cover_image": "https://i.discogs.com/8opupykrFFBG0yYWgZytXBQvcASUMCdg0LUJv9oGGCI/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0ODc1/OTE3LTE3NTU3NDQ2/NjAtOTA0NS5qcGVn.jpeg",
+            "resource_url": "https://api.discogs.com/masters/3959777",
+            "community": {
+                "want": 8,
+                "have": 4
+            }
+        }
+    ]
+}
