@@ -15,7 +15,7 @@ class AppSettings(BaseSettings):
 
     model_config: SettingsConfigDict = SettingsConfigDict(
         env_file="env/.env",
-        extra="igonre",
+        extra="ignore"
     )
 
 
