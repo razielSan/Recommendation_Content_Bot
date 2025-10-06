@@ -6,6 +6,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class MusicSettingsDiscogs(BaseSettings):
     """Настройки для сайта https://www.discogs.com/."""
 
+    DISCOGS: str = "🎵 Discogs 🎵"  # Отображение надписи в мызыкальных новинках
+    CALLBACK_DISCOGS: str = "discogs"  # callback отображение
+
     KEY: str
     SECRET: str
     TITLE: Optional[str] = None
@@ -27,10 +30,12 @@ class MusicSettingsDiscogs(BaseSettings):
 class MusicSettings(BaseSettings):
     """Настройки для музыкальных рекомендаций."""
 
-    MUSIC: str = '🎧 Mузыка 🎧' # Отображение надписи в главном меню
+    MUSIC: str = "🎧 Mузыка 🎧"  # Отображение надписи в главном меню
 
-    MUSIC_NEWS: str = "🤘 Музыкальные Новинки 🤘"
-    CALLBACK_MUSIC_NEWS: str = "musical_news"
+    MUSIC_NEWS: str = (
+        "🤘 Музыкальные Новинки 🤘"  # Отображение надписи в музыкальном меню
+    )
+    CALLBACK_MUSIC_NEWS: str = "musical_news"  # callback отображение
 
     model_config: SettingsConfigDict = SettingsConfigDict(
         env_file="env/.env.music", extra="ignore"
