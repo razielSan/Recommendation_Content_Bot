@@ -13,7 +13,10 @@ class AppSettings(BaseSettings):
         BotCommand(command="start", description="Меню бота")
     ]
 
-    model_config: SettingsConfigDict = SettingsConfigDict(env_file=".env")
+    model_config: SettingsConfigDict = SettingsConfigDict(
+        env_file="env/.env",
+        extra="igonre",
+    )
 
 
 settings: AppSettings = AppSettings()
