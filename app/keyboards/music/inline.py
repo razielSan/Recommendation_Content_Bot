@@ -40,3 +40,29 @@ def get_main_musical_news_button():
         ]
     )
     return inline_kb.as_markup(resize_keyboard=True)
+
+
+def get_discogs_menu_button():
+    """Возвращает инлайн кнопки меню выбора музыкальных новинок для сайта discogs.com
+
+    Returns:
+        _type_: inline_kb
+    """
+    inline_kb = InlineKeyboardBuilder()
+    for index, genre in enumerate(discogs_setting.DICT_STYLES.values(), start=0):
+        if index % 3 == 0:
+            inline_kb.row(
+                InlineKeyboardButton(
+                    text=genre,
+                    callback_data=f"GenreDiscogs_{genre}",
+                )
+            )
+        else:
+            inline_kb.add(
+                InlineKeyboardButton(
+                    text=genre,
+                    callback_data=f"GenreDiscogs_{genre}",
+                )
+            )
+
+    return inline_kb.as_markup(resize_keyboard=True)
