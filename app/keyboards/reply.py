@@ -18,3 +18,14 @@ def get_main_menu_button():
         ],
     )
     return reply_kb.as_markup(resize_keyboard=True)
+
+
+def get_cancel_button():
+    reply_kb = ReplyKeyboardBuilder(
+        markup=[
+            [
+                KeyboardButton(text="Отмена"),
+            ],
+        ],
+    )
+    return reply_kb.as_markup(resize_keyboard=True)
