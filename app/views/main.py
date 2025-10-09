@@ -5,7 +5,7 @@ from aiogram.filters import StateFilter
 from keyboards.reply import get_main_menu_button
 
 
-router = Router(name=__name__)
+router: Router = Router(name=__name__)
 
 
 @router.message(StateFilter(None), F.text == "/start")
