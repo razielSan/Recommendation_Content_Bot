@@ -11,7 +11,8 @@ def get_list_albums_for_discogs(
     per_page: int,
     url: str,
     year: int,
-    cancel_check,
+    cancel_check: Callable,
+    update_progress: Callable,
 ) -> List:
     """Возвращает список альбомов исполнителей по жанру для сайта discogs.com
 
@@ -85,6 +86,8 @@ def get_list_albums_for_discogs(
                     "IMG": response["images"][0]["uri150"],
                 }
             )
+            # Обновляем прогресс скачивания
+            update_progress()
             list_artists.append(music)
         except Exception as err:
             print(err)
