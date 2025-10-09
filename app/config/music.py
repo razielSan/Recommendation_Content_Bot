@@ -34,6 +34,7 @@ class MusicSettingsDiscogs(BaseSettings):
     TRACKLIST: Optional[int] = None
     IMG: Optional[str] = None
     URL_SEARCH: str = "https://api.discogs.com/database/search"
+    COUNT_ALBUMS_SEARCH: int = 2
 
     model_config: SettingsConfigDict = SettingsConfigDict(
         env_file="env/.env.music", extra="ignore"
