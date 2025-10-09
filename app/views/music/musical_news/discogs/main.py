@@ -16,6 +16,7 @@ from keyboards.reply import get_cancel_button
 from keyboards.inline import get_button_for_forward_or_back
 from functions.music import get_list_albums_for_discogs, get_descripions_for_albums
 from extensions import bot
+from utils.music.discogs.discogs import make_update_progress, make_cancel_check
 
 
 router: Router = Router(name=__name__)
@@ -32,18 +33,22 @@ async def main(call: CallbackQuery):
 
 class DiscogsFSM(StatesGroup):
     """FSM для работы с сайтом discogs.com."""
+
     albums_list: State = State()
     discogs_state: State = State()
+    counter = State()
 
 
-@router.message(DiscogsFSM.discogs_state, F.text == "Отмена")
+@router.message(DiscogsFSM.counter, F.text == "Отмена")
 @router.message(DiscogsFSM.albums_list, F.text == "Отмена")
 async def cancel_discogs_handler(message: Message, state=FSMContext):
     """Работа с FSM DiscogsFSM.Отменяет все действия."""
     current_state = await state.get_state()
 
-    if current_state == "DiscogsFSM:discogs_state":
+    if current_state == "DiscogsFSM:counter":
+        await state.set_state(DiscogsFSM.discogs_state)
         await state.update_data(discogs_state=True)
+        await state.set_state(DiscogsFSM.counter)
     else:
         await state.clear()
         await bot.send_message(
@@ -57,13 +62,13 @@ async def cancel_discogs_handler(message: Message, state=FSMContext):
         )
 
 
-@router.message(DiscogsFSM.discogs_state, F.text)
+@router.message(DiscogsFSM.counter, F.text)
 @router.message(DiscogsFSM.albums_list, F.text)
 async def get_message_DiscogsFSM(message: Message, state: FSMContext):
     """Отправляет пользователю сообщение если он написал при обработке запроса на получение альбомов."""
     current_state = await state.get_state()
 
-    if current_state == "DiscogsFSM:discogs_state":
+    if current_state == "DiscogsFSM:counter":
         await message.answer(text="Дождитесь обработки запроса или нажмите 'Отмена'")
     else:
         await message.answer(text="Нажмите кнопку 'Отмена' выйти в меню")
@@ -81,41 +86,39 @@ async def get_album_artists_by_genre_for_site_discogs(
 
     year: int = datetime.now().year
 
-    # Функция нужна для того если пользователь нажмет Отмена
-    def cancel_check() -> bool:
-        """Возвращает статус состояния отмены FSM DiscogsFSM
-
-        Returns:
-            _type_: Возвращает статус состояния отмены FSM DiscogsFSM
-        """
-        data: Dict = asyncio.run_coroutine_threadsafe(state.get_data(), loop).result()
-        return data.get("discogs_state", False)
+    digit: int = discogs_setting.COUNT_ALBUMS_SEARCH
 
     # Встаем в discogs_state для того чтобы пользователь ожидал загрузки и ни куда не мог перейти
-    await state.set_state(DiscogsFSM.discogs_state)
+    await state.set_state(DiscogsFSM.counter)
+    await state.update_data(counter=0)
 
     loop = asyncio.get_event_loop()
+
+    # Функция для отслеживания прогресса обработки скачивания информации об альбомах
+    update_pogress = make_update_progress(loop=loop, state=state)
+
+    # Функция для отмены скачивания информации об альбомах при нажатии пользователем кнопки Отмена
+    cancel_check = make_cancel_check(loop=loop, state=state)
 
     await bot.send_message(
         chat_id=call.message.chat.id,
         text="Процесс начался...",
         reply_markup=get_cancel_button(),
     )
-    progress_msg: Message = await call.message.answer("⏳ Обработка")
+    progress_msg: Message = await call.message.answer(
+        f"👩‍🔬 Обработка запроса:\n\n📥 " f"Скачивание альбомов: 0%"
+    )
     # 🧠 Передача аргументов в run_in_executor
     processing_task: Future[List] = loop.run_in_executor(
         None,
         get_list_albums_for_discogs,
         genre,
-        50,
+        digit,
         discogs_setting.URL_SEARCH,
         year,
         cancel_check,
+        update_pogress,
     )
-
-    # Анимация загрузки
-    dots: List = ["", ".", "..", "..."]
-    dot_index: 0 = 0
 
     while not processing_task.done():
         data = await state.get_data()
@@ -123,16 +126,21 @@ async def get_album_artists_by_genre_for_site_discogs(
         if data.get("discogs_state", None):
             break
         try:
-            await progress_msg.edit_text(f"⏳ Обработка{dots[dot_index % len(dots)]}")
+            result = (data.get("counter", 0) / digit) * 100
+            await progress_msg.edit_text(
+                f"👩‍🔬 Обработка запроса:\n\n📥 " f"Скачивание альбомов: {result:.1f}%"
+            )
         except Exception:
             pass
-        dot_index += 1
         await asyncio.sleep(0.5)
 
     data: Dict = await state.get_data()
     if data.get("discogs_state", None):
 
-        await bot.send_message(chat_id=call.message.chat.id, text="Подождите идет процесс отмены обработки...")
+        await bot.send_message(
+            chat_id=call.message.chat.id,
+            text="Подождите идет процесс отмены обработки...",
+        )
 
         # Ждем пока отменятся все таски чтобы корректно сделать state.clear
         while not processing_task.done():
@@ -159,6 +167,13 @@ async def get_album_artists_by_genre_for_site_discogs(
             img: str = album_artist["IMG"]
 
             album: str = get_descripions_for_albums(album_artist)
+
+            # Ставим на засыпание чтобы пользователь сперва увидел сообщение о загрузке
+            await progress_msg.edit_text(
+                "👩‍🔬 Обработка запроса:\n\n✅ Альбомы загружены"
+            )
+            await asyncio.sleep(1)
+
             await bot.send_photo(
                 chat_id=call.message.chat.id,
                 photo=img,
